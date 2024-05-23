@@ -331,3 +331,82 @@ section{
   article .icon{
     cursor: default;
   }
+
+  /*----------------------------------------------------------------------------------*/
+  /*PROJECTS*/
+
+  #projects {
+    position: relative;
+
+}
+#projects .container-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#projects .details-container {
+    width: calc(33.33% - 1rem); /* Calcula a largura de cada projeto para ocupar 1/3 do espaço disponível */
+    margin-bottom: 2rem; /* Adiciona espaçamento entre os projetos */
+}
+
+  .color-container{
+    border-color: rgb(163, 163, 163);
+    background: white;
+  }
+
+  .project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  .projeto-titulo{
+    margin: 1rem;
+    color: black;
+  }
+  .projeto-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  /*---------------------------------------------------------------------------*/
+  /*CONTACT*/
+
+  #contato{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 160vh;
+  }
+  .contato-inf-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: white;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .contato-inf-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .contato-inf-container p{
+    font-size: larger;
+  }
+
+  .contato-icon{
+    cursor: default;
+
+  }
+
+  .email-icon{
+    height: 2.5rem;
+  }
