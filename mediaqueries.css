@@ -1,3 +1,16 @@
+@media screen and (max-width: 1400px) {
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers{
+        flex-wrap: wrap;
+    }
+}
+/*----------------------------------------------------------------------*/
+
+
 @media screen and (max-width: 1200px) {
     #desktop-nav{
        display: none; 
@@ -5,4 +18,104 @@
     #hamburger-nav{
         display: flex ;
     }
+/*-------------profile----------------------------*/
+    #profile {
+        height: auto; /* Removendo a altura fixa para permitir que o conteúdo se ajuste */
+        margin-bottom: 2rem; /* Adicionando margem inferior para separar do próximo elemento */
+    }
+    .pic-container{
+        width: 274px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        display: flex; /* Manter o display flex para alinhar elementos verticalmente */
+        flex-direction: column; /* Mudar para coluna para empilhar os elementos */
+        align-items: center; /* Alinhar os itens horizontalmente */
+      }
+ 
+    
+    #experiencia .experiencia-detalhes-cont{
+        margin-top: 2rem;
+    }
+    #profile .section-container{
+        display: block;
+    }
+    section .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+  
+    .about-containers{
+        margin-top: 0;
+    }
+    #contato{
+        margin-top: 35rem;
+    }
+}
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 650px) {
+    #contato, footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article{
+        font-size: 1rem;
+    }
+
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers, .contato-inf-upper-container, .btn-container{
+        flex-wrap: wrap;
+    }
+
+    .contato-inf-container{
+        margin: 0;
+    }
+
+    .contato-inf-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .experiencia-sub-titulo{
+        font-size: 1.25rem;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__texto_p2{
+        font-size: 1.25rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .text-container{
+        text-align: justify;
+    }
+    #contato{
+        margin-top: 47rem;
+    }
+
 }

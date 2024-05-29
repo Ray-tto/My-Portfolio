@@ -317,7 +317,7 @@ section{
     text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
     align-items: center;
   }
@@ -410,3 +410,4 @@ section{
   .email-icon{
     height: 2.5rem;
   }
+  /*-----------------------------------------------------------------------------------*/
