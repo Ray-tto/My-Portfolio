@@ -245,7 +245,7 @@ section{
 /*------------------------------------------------------------------------------------*/
 /* ABOUT SECTION */
 
-#about{
+#sobre{
     position: relative;
 }
 
@@ -337,6 +337,8 @@ section{
 
   #projects {
     position: relative;
+    height: 160vh;
+    
 
 }
 #projects .container-projeto {
@@ -373,11 +375,10 @@ section{
   /*CONTACT*/
 
   #contato{
-    margin-top: 10rem;
     display: flex;
-    justify-content: center;
+    margin-top: 10rem;
+    height: 55vh;
     flex-direction: column;
-    height: 160vh;
   }
   .contato-inf-upper-container{
     display: flex;

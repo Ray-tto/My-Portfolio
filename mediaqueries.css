@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -7,39 +7,57 @@
     .about-containers{
         flex-wrap: wrap;
     }
+
+    #projects, #experiencia{
+        margin-top: 5rem;
+    }
+
+    #contato{
+        margin-top: 15rem;
+    }
 }
-/*----------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width: 1363px) {
 
+    #projects{
+        height: 300vh;
+    }
+    #projects, #experiencia{
+        margin-top: 1rem;
+    }
+}
 
-@media screen and (max-width: 1200px) {
+/*------------------------------------------------------------------------------*/
+@media screen and (max-width: 1280px) {
     #desktop-nav{
        display: none; 
     }
     #hamburger-nav{
         display: flex ;
     }
-/*-------------profile----------------------------*/
+
+    #projects, #experiencia{
+        margin-top: 1rem;
+    }
+
     #profile {
-        height: auto; /* Removendo a altura fixa para permitir que o conteúdo se ajuste */
-        margin-bottom: 2rem; /* Adicionando margem inferior para separar do próximo elemento */
+        display: block;
+        height: auto; 
+        margin-bottom: 2rem;
     }
     .pic-container{
         width: 274px;
-        height: 275px;
-        margin: 0 auto 2rem;
-        display: flex; /* Manter o display flex para alinhar elementos verticalmente */
-        flex-direction: column; /* Mudar para coluna para empilhar os elementos */
-        align-items: center; /* Alinhar os itens horizontalmente */
+        margin: 0 auto -0.4rem;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
       }
- 
-    
-    #experiencia .experiencia-detalhes-cont{
-        margin-top: 2rem;
-    }
-    #profile .section-container{
-        display: block;
-    }
-    section .section-container{
+
+      #sobre, .section-container {
+         display: block; 
+        }
+
+    section, .section-container {
         height: fit-content;
     }
     section{
@@ -49,12 +67,41 @@
     .about-containers{
         margin-top: 0;
     }
+
+    .about-pic {
+        border-radius: 2rem;
+        height: 330px;
+        margin-top: 20px;
+    }
+    #projects {
+        height: 80vh;
+    }
+    
+    #experiencia .experiencia-detalhes-cont{
+        margin-top: 2rem;
+    }
+    #profile .section-container{
+        display: block;
+    }
+   
+   
     #contato{
         margin-top: 35rem;
     }
 }
 /*----------------------------------------------------------------------*/
-
+@media screen and (max-width: 1159px) {
+    #projects{
+        height: 255vh;
+    }
+}
+/*--------------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+    #projects {
+        height: 185vh;
+    }
+}
+/*----------------------------------------------------------------------*/
 @media screen and (max-width: 650px) {
     #contato, footer{
         height: 40vh;
@@ -68,18 +115,14 @@
         font-size: 1rem;
     }
 
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
+    #projects {
+        height: 145vh;
     }
 
     .about-containers, .contato-inf-upper-container, .btn-container{
         flex-wrap: wrap;
     }
 
-    .contato-inf-container{
-        margin: 0;
-    }
 
     .contato-inf-container p, .nav-links li a {
         font-size: 1rem;
@@ -117,5 +160,13 @@
     #contato{
         margin-top: 47rem;
     }
+
+}
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 505px) {
+    #projects {
+        height: 100vh;
+    }
+  
 
 }
