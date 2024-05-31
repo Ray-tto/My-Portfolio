@@ -12,9 +12,6 @@
         margin-top: 5rem;
     }
 
-    #contato{
-        margin-top: 15rem;
-    }
 }
 /*--------------------------------------------------------------------------*/
 @media screen and (max-width: 1363px) {
@@ -36,7 +33,7 @@
         display: flex ;
     }
 
-    #projects, #experiencia{
+    #projects, #experiencia, #sobre{
         margin-top: 1rem;
     }
 
@@ -103,7 +100,7 @@
 }
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 650px) {
-    #contato, footer{
+    #contato{
         height: 40vh;
     }
     #profile{
@@ -132,20 +129,21 @@
         font-size: 1.25rem;
     }
 
+    #sobre{
+        margin-top: 2.5rem;
+    }
+
     .logo{
         font-size: 1.5rem;
     }
 
-    .nav-links{
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .pic-container{
+        .pic-container {
         width: auto;
-        height: 46vw;
+        height: 65vw;
+        margin: 1rem;
         justify-content: center;
     }
+
     .section__texto_p2{
         font-size: 1.25rem;
     }
@@ -164,9 +162,18 @@
 }
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 505px) {
-    #projects {
-        height: 100vh;
+    #profile{
+        height: auto;
     }
-  
 
+    #contato {
+        margin-top: 47rem;
+        margin-bottom: 40px;
+    }
+    .pic-container {
+       margin: 2rem;
+    }
+    #sobre{
+        margin-top: 3rem;
+    }
 }
