@@ -92,10 +92,17 @@
         height: 255vh;
     }
 }
+
 /*--------------------------------------------------------------------------------------*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 955px) {
     #projects {
-        height: 185vh;
+        height: 189vh;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #projects {
+        height: 160vh;
     }
 }
 /*----------------------------------------------------------------------*/
@@ -171,9 +178,28 @@
         margin-bottom: 40px;
     }
     .pic-container {
-       margin: 2rem;
+       margin: 2.5rem;
     }
     #sobre{
         margin-top: 3rem;
     }
+}
+@media screen and (max-width: 480px){
+    #projects {
+        height: 85vh;
+    }
+}
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 360px) {
+    .pic-container {
+        margin: 3.5rem;
+        align-items: center;
+    }
+    #projects {
+        height: 350vh;
+    }
+    footer{
+        margin-right: 1rem;
+    }
+
 }
