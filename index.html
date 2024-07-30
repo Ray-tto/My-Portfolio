@@ -8,14 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="dark.css" id="theme-stylesheet"> 
     <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header>
         <div class="container">
+            <div id="dark">
+                <input type="checkbox" class="checkbox" id="check">
+                <label class="label" for="check">
+                    <i class="material-icons lua">nights_stay</i>
+                    <i class="material-icons sol">brightness_high</i>
+                </label>
+
+            </div>
+
             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-            <i id="Xburguer" class="material-icons" onclick="clickMenu()">disabled_by_default</i>
           
         </div>
             <nav id="itens">
@@ -279,5 +288,6 @@
 
 
 <script src="script.js"></script>
+
 </body>
 </html>
