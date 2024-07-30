@@ -4,62 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo"> Rayane Santana</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <i id="Xburguer" class="material-icons" onclick="clickMenu()">disabled_by_default</i>
+          
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"> Rayane Santana</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
+            <nav id="itens">
+                <ul>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projeto</a></li>
                     <li><a href="#contato">Contato</a></li>
-            </div>
-        </div>
-    </nav>
+                </ul>
+            </nav>
+    </header>
+
+  <main class="tudo"> 
     <section id="profile">
-        <div class="pic-container">
-            <img src="./img/pc.png" alt="Me">
-        </div>
+        <main>
+            <div class="imagem0">
+                <img src="./img/pc.png" alt="foto-pc">
+            </div>
+        </main>
+
         <div class="section-texto">
-            <p class="section__texto_p1">Olá, eu sou a</p>
+            <p class="texto_p1">Olá, eu sou a</p>
             <h1 class="title">Rayane Santana</h1>
-            <p class="section__texto_p2">Desenvolvedora Front-End</p>
+            <p class="texto_p2">Desenvolvedora Front-End</p>
+
             <div class="btn-container">
-                <button class="btn btn-color2" onclick="window.open('./img/Currículo_ry.pdf')">Download CV</button>
-                <button class="btn btn-color1" onclick="location.href='./#contato'">Contato Info</button>
+                <button class="btn btn-color2" onclick="window.open('./img/Currículo_ry.pdf')">Download</button>
+                <button class="btn btn-color1" onclick="location.href='./#contato'">Contato</button>
             </div>
             <div id="redes-sociais">
                 <img src="./img/linkedin.png" alt="My linkedin" class="icon" onclick="window.open('https://linkedin.com/in/rayanesantanajs/', '_blank')">
-                <img src="./img/github.png" alt="My linkedin" class="icon" onclick="window.open('https://github.com/Ray-tto', '_blank');">
+                <img src="./img/github.png" alt="My github" class="icon" onclick="window.open('https://github.com/Ray-tto', '_blank');">
             </div>
-        </div>
 
+        </div>
     </section>
+
     <section id="sobre">
-        <p class="section__texto_p1"> Saiba mais</p>
+        <p class="texto_p1"> Saiba mais</p>
         <h1 class="title">Sobre Mim</h1>
-        <div class="section-container">
-            <div class="pic-container"><img src="./img/about-pic.jpg" alt="Profile picture" class="about-pic">
+        <div class="section-sobre">
+            <div class="imagem">
+                <img src="./img/about-pic.jpg" alt="imagem" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
@@ -76,7 +75,7 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
+                    <p class="mim">
                         Sou uma Desenvolvedora Front-end especializada em React.js, JavaScript, TypeScript e Styled Components.
                          Com um histórico comprovado de entrega de soluções inovadoras. Minha paixão por criar interfaces web 
                          eficientes e intuitivas impulsiona meu trabalho, buscando constantemente aprimorar a experiência do 
@@ -85,232 +84,175 @@
                       </p>
                 </div>
             </div>
-        </div>
 
-    </section>
-
-    <section id="experiencia">
-        <p class="section__texto_p1">Explore Minhas</p>
-        <h1 class="title">Experiencias</h1>
-        <div class="experiencia-detalhes-cont">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experiencia-sub-titulo">Desenvolvimento front-end</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediário</p>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>React</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>  
-                </div>
-                 <div class="details-container">
-                    <h2 class="experiencia-sub-titulo">Desenvolvimento Back-end</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Basico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Basico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./img/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        
-                
-                    </div>  
-                </div>
-            
-            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <p class="section__texto_p1">Meus recentes</p>
+    <section id="habilidades">
+        <p class="texto_p1">Explore Minhas</p>
+        <h1 class="title">Habilidades</h1>
+   
+    <div class="cards">
+        <div class="box" key="0">
+            <p>HTML5</p>
+            <img src="./img/icon/html-5-150.png" alt="html">
+        </div>
+        <div class="box" key="1">
+            <p>CSS3</p>
+            <img src="./img/icon/css3-150.png" alt="css">
+        </div>
+        <div class="box" key="2">
+            <p>JavaScript</p>
+            <img src="./img/icon/javascript-150.png" alt="JavaScript">
+        </div>
+        <div class="box" key="3">
+            <p>TypeScript</p>
+            <img src="./img/icon/typescript-150.png" alt="TypeScript">
+        </div>
+        <div class="box" key="4">
+            <p>React.js</p>
+            <img src="./img/icon/react-native-150.png" alt="React">
+        </div>
+        <div class="box" key="5">
+            <p>Redux</p>
+            <img src="./img/icon/redux-150.png" alt="Next">
+        </div>
+        <div class="box" key="6">
+            <p>SASS</p>
+            <img src="./img/icon/sass-150.png" alt="SASS">
+        </div>
+        <div class="box" key="7">
+            <p>Bootstrap</p>
+            <img src="./img/icon/bootstrap-150.png" alt="Figma">
+        </div>
+        <div class="box" key="7">
+            <p>Git</p>
+            <img src="./img/icon/git-150.png" alt="Figma">
+        </div>
+        <div class="box" key="7">
+            <p>Figma</p>
+            <img src="./img/icon/figma-144.png" alt="Figma">
+        </div>
+    </div>
+    </section>
+
+    <section id="projetos">
+        <p class="texto_p1">Recentes</p>
         <h1 class="title">Projetos</h1>
-        <div class="experiencia-detalhes-cont cont-projeto">
-            <div class="about-containers container-projeto">
+
+        <div class="experiencia container-projeto">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img 
-                    src="./img/project-1.png" 
-                    alt="projeto 1" 
-                    class="project-img">
+                    <img src="./img/project-1.png"
+                    alt="projeto1"
+                    class="projeto-img">
                 </div>
-                <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Um</h2>
+                <h2 class="sub-titulo projeto-titulo">Projeto Um</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color2 projeto-btn" 
-                    onclick="location.href='https://github.com/Ray-tto'">
-                        GitHub
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
                     </button>
-                    <button class="btn btn-color2 projeto-btn" 
-                    onclick="location.href='https://github.com/Ray-tto'">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
                         Live Demo
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img 
-                    src="./img/project-2.png" 
-                    alt="projeto 2" 
-                    class="project-img">
+                    <img src="./img/project-2.png"
+                    alt="projeto2"
+                    class="projeto-img">
                 </div>
-                <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Dois</h2>
+                <h2 class="sub-titulo projeto-titulo">Projeto Dois</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color2 projeto-btn" 
-                    onclick="location.href='https://github.com/Ray-tto'">
-                        GitHub
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
                     </button>
-                    <button class="btn btn-color2 projeto-btn" 
-                    onclick="location.href='https://github.com/Ray-tto'">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
                         Live Demo
                     </button>
                 </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./img/project-3.png"
+                    alt="projeto3"
+                    class="projeto-img">
+                </div>
+                <h2 class="sub-titulo projeto-titulo">Projeto Três</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
+                    </button>
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./img/project-1.png"
+                    alt="projeto4"
+                    class="projeto-img">
+                </div>
+                <h2 class="sub-titulo projeto-titulo">Projeto Quatro</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
+                    </button>
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./img/project-2.png"
+                    alt="projeto5"
+                    class="projeto-img">
+                </div>
+                <h2 class="sub-titulo projeto-titulo">Projeto Cinco</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
+                    </button>
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./img/project-3.png"
+                    alt="projeto6"
+                    class="projeto-img">
+                </div>
+                <h2 class="sub-titulo projeto-titulo">Projeto Seis</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                            GitHub
+                    </button>
+                    <button class="btn btn-color2 projeto-btn" onclick="window.open('https://github.com/Ray-tto', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
         </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img 
-                src="./img/project-3.png" 
-                alt="projeto 3" 
-                class="project-img">
-            </div>
-            <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Três</h2>
-            <div class="btn-container">
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    GitHub
-                </button>
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    Live Demo
-                </button>
-            </div>
-            </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img 
-                src="./img/project-1.png" 
-                alt="projeto 4" 
-                class="project-img">
-            </div>
-            <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Quatro</h2>
-            <div class="btn-container">
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    GitHub
-                </button>
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    Live Demo
-                </button>
-            </div>
-        </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img 
-                src="./img/project-2.png" 
-                alt="projeto 5" 
-                class="project-img">
-            </div>
-            <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Cinco</h2>
-            <div class="btn-container">
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    GitHub
-                </button>
-                <button class="btn btn-color2 projeto-btn" 
-                onclick="location.href='https://github.com/Ray-tto'">
-                    Live Demo
-                </button>
-            </div>
-    </div>
-    <div class="details-container color-container">
-        <div class="article-container">
-            <img 
-            src="./img/project-3.png" 
-            alt="projeto 6" 
-            class="project-img">
-        </div>
-        <h2 class="experiencia-sub-titulo projeto-titulo"> Projeto Seis</h2>
-        <div class="btn-container">
-            <button class="btn btn-color2 projeto-btn" 
-            onclick="location.href='https://github.com/Ray-tto'">
-                GitHub
-            </button>
-            <button class="btn btn-color2 projeto-btn" 
-            onclick="location.href='https://github.com/Ray-tto'">
-                Live Demo
-            </button>
-        </div>
-        </div>
-    </div>
-</div>
-             
     </section>
 
     <section id="contato">
-        <p class="section__texto_p1">Saiba Mais</p>
+        <p class="texto_p1"> Saiba mais</p>
         <h1 class="title">Entre em Contato</h1>
-        <div class="contato-inf-upper-container">
-            <div class="contato-inf-container">
-                <img 
-                src="./img/email.png" 
-                alt="email icon" 
+
+        <div class="contato-informacao">
+            <div class="infor-container">
+                <img src="./img/email.png" alt="email icon"
                 class="icon contato-icon email-icon">
                 <p><a href="mailto:anessantana0@gmail.com" target="_blank">anessantana0@gmail.com</a></p>
             </div>
-            <div class="contato-inf-container">
+
+            <div class="infor-container">
                 <img 
                 src="./img/linkedin.png" 
                 alt="linkedin icon" 
@@ -319,27 +261,23 @@
             </div>
         </div>
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-cont">
                 <ul class="nav-links">
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projeto</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </footer>
+</main >
 
 
 
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

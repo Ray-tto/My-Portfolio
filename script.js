@@ -1,7 +1,30 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+document.addEventListener('DOMContentLoaded', function() {
+    var itens = document.getElementById('itens');
 
-}
+
+    function clickMenu() {
+        if (itens.style.display === 'block') {
+            itens.style.display = 'none';
+
+        } else {
+            itens.style.display = 'block';
+  
+        }
+    }
+
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block';
+
+        } else {
+            itens.style.display = 'none';
+            
+        }
+    }
+
+    mudouTamanho();
+
+    window.addEventListener('resize', mudouTamanho);
+
+    document.getElementById('burguer').addEventListener('click', clickMenu);
+});

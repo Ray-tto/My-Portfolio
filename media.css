@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 930px) {
+    header{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    i#burguer{
+        display: none;
+    }
+
+    nav{
+        margin-left: auto;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+    }
+    nav li{
+        display: inline-flex;
+        width: auto;
+        margin: 0px 15px;
+        font-size: 15px;
+    }
+    nav#itens a{
+        border: 0;
+        font-size: 20px;
+    }
+
+    #sobre{
+        margin-top: 3rem;
+    }
+
+    footer nav li {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 930px) {
+    header{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    i#burguer{
+        display: none;
+    }
+
+    nav{
+        margin-left: auto;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav li{
+        display: inline-flex;
+        width: auto;
+        margin: 0px 15px;
+        font-size: 15px;
+    }
+    nav#itens a{
+        border: 0;
+        font-size: 20px;
+    }
+
+    main.tudo{
+        max-width: 1100px;
+        margin: auto;
+    }
+
+
+ /*-----------profile-------------------------------------------------------------------------------------------------------------*/
+    #profile{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #profile .imagem0{
+        flex: 1;
+        display: flex;
+        margin-left: 5rem;
+        justify-content: right;
+
+    }
+
+    #profile.section-texto {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-top: 80px;
+    }
+
+    .texto_p1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    .title {
+        font-size: 3rem;
+        margin: 5px 0;
+    }
+    
+    .texto_p2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+    padding: 0.7rem;
+    width: 6.5rem;
+    border-radius: 2rem;
+}
+
+.container-projeto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/*-----------SOBRE-------------------------------------------------------------------------------------------------------------*/
+   .section-sobre{
+    display: flex;
+   }
+
+   .about-pic{
+    border-radius: 2rem;
+    height: 400px;
+    margin-top: 20px;
+}
+
+
+    footer nav li {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+
+    .texto_p1 {
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    .title {
+        font-size: 55px;
+        margin: 3px 0;
+    }
+
+
+    .btn{
+    padding: 0.8rem;
+    width: 7rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+}
