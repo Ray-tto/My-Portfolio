@@ -136,7 +136,8 @@ div.imagem0{
     gap: .5rem;
 }
 .btn{
-    transition: all 300ms ease;
+    cursor: pointer;
+    transition: 0.2s;
     padding: .5rem;
     width: 5.5rem;
     border-radius: 2rem;
@@ -147,7 +148,7 @@ div.imagem0{
 
 .btn-color1:hover, .btn-color2:hover{
     cursor: pointer;
-    margin-bottom: 2px;
+    transform: scale(1.05);
 }
 .btn-color1, .btn-color2:hover{
     background:  #483d8b;
@@ -296,7 +297,7 @@ p, h3{
   }
 
   .projeto-img{
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 85%;
     height: 85%;
   }
