@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 930px) {
+@media screen and (max-width: 930px) {
     header{
         display: flex;
         align-items: center;
@@ -121,8 +121,8 @@
 
 .container-projeto {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
-    gap: 20px; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 /*-----------SOBRE-------------------------------------------------------------------------------------------------------------*/
@@ -162,15 +162,6 @@
     border-radius: 2rem;
     font-size: 1rem;
 }
-
-
-
-
-
-
-
-
-
 }
 
 /*---------------------------------------------------------------------------------------*/
